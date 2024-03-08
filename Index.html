@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIND MY PICTURE</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div id="showbig"></div>
+    <div id="all" class="container mx-auto">
+        <div class="container mx-auto px-4 py-8">
+            <div class="bg-white rounded-lg shadow-xl p-8">
+                <div class="col-span-12">
+                    <div class="form-floating">
+                        <input class="form-input w-full" type="text" name="inp" id="inp">
+                        <label for="inp" class="block text-gray-700"><b>Enter any name to find its picture</b></label>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <button class="bg-gray-800 text-white py-2 px-4 rounded-lg" onclick="fetchPic()">Fetch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cent" class="container mx-auto px-4 py-8">
+            <div id="showPic" class="grid grid-cols-2 gap-4"></div>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
